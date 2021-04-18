@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+	<h5>Greeting:
+		<text th:utext="${greeting}" th:remove="tag"/>
+	</h5>
+	<ul>
+	 	<li th:each="task : ${tasks}" th:text="${task}"></li>
+	 </ul>
+	</body>
+</html>
